@@ -1,0 +1,30 @@
+//animate links in navbar
+@keyframes moveLinks{
+    0%{
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100%{        
+        transform: translate(0);
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes showItem{
+    to{  
+        opacity: 1;    
+    }
+}
+
+@keyframes moveOnTop{
+    0%{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100%{        
+        opacity: 1;
+        transform: translate(0);
+    }
+}

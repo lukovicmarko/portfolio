@@ -1,0 +1,7 @@
+@mixin animateLinks($delay){
+    animation-name: moveLinks;
+    animation-duration: .25s;
+    animation-delay: $delay;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}

@@ -1,0 +1,76 @@
+.hero{
+    max-width: 100rem;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 15rem 0;
+    &__hi{
+        color: $primary-blue;
+        font-size: 1.6rem;
+        font-family: $font-family;
+        font-weight: normal;
+        margin: 0 0 2rem .6rem;
+        opacity: 0;
+        animation: moveOnTop .4s .2s ease-out forwards; 
+    }    
+    &__name{
+        font-size: 8rem;
+        line-height: 1.1;
+        margin: 0;    
+        font-weight: 600;       
+        opacity: 0;
+        animation: moveOnTop .4s .3s ease-out forwards; 
+    }
+    &__subtitle{
+        font-size: 8rem;
+        line-height: 1.1;
+        color: rgb(136, 146, 176);
+        opacity: 0;
+        animation: moveOnTop .4s .4s ease-out forwards; 
+    }
+    &__blurb{
+        margin-top: 2.5rem;      
+        max-width: 50rem;
+        opacity: 0;
+        animation: moveOnTop .4s .5s ease-out forwards; 
+        p{
+            margin: 8rem 0;
+            font-size: 2.5rem;
+            .txt-type{
+                color: $primary-blue;
+            }
+        }
+    }
+    &__wrapper{
+        opacity: 0;
+        animation: moveOnTop .4s .6s ease-out forwards; 
+    }
+    &__email{
+        color: $primary-blue;
+        background-color: transparent;
+        font-size: 1.4rem;
+        font-family: $font-family;
+        line-height: 1;
+        letter-spacing: .3rem;
+        cursor: pointer;        
+        border-width: .1rem;
+        border-style: solid;
+        border-color: $primary-blue;
+        border-image: initial;
+        border-radius: .3rem;
+        padding: 1.75rem 3rem;
+        text-decoration: none;    
+        transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s; 
+        &:hover{
+            background-color: rgba(100, 255, 218, 0.07);
+            color:  $primary-blue;
+            outline: 0;
+        }        
+    }      
+}
+

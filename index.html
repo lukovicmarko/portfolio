@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="./sass/index.css">
+    <title>Marko Lukovic</title>
+</head>
+
+<body>
+    <div class="navigation-hamburger">
+        <nav class="navigation">
+            <div class="hamburger-menu">
+                <div class="line line-1"></div>
+                <div class="line line-2"></div>
+                <div class="line line-3"></div>
+            </div>
+            <ul class="hamburger-nav-list">
+                <li class="hamburger-nav-item">
+                    <a href="#hero" class="hamburger-nav-link"><span>01.</span>Home</a>
+                </li>
+                <li class="hamburger-nav-item">
+                    <a href="#about" class="hamburger-nav-link"><span>02.</span>About</a>
+                </li>
+                <li class="hamburger-nav-item">
+                    <a href="#portfolio" class="hamburger-nav-link"><span>03.</span>Portfolio</a>
+                </li>
+                <li class="hamburger-nav-item">
+                    <a href="#contact" class="hamburger-nav-link"><span>04.</span>Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <nav id="navbar">
+        <div class="wrapper">
+            <a href="#hero" class="nav-link">
+                <h1 class="logo">M</h1>
+            </a>
+            <ul class="nav-list" id="nav-list">
+                <li class="nav-item about-link">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item portfolio-link">
+                    <a href="#portfolio" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item contact-link">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="social">
+            <ul class="social-list">
+                <li class="list-item">
+                    <a href="https://github.com/lukovicmarko" target="_blank" class="list-link">
+                        <svg class="social-nav__icon">
+                            <use xlink:href="images/sprite.svg#icon-github"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="https://www.linkedin.com/in/marko-lukovic-432ab7122/" class="list-link" target="_blank">
+                        <svg class="social-nav__icon">
+                            <use xlink:href="images/sprite.svg#icon-linkedin2"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="https://twitter.com/Mrvicakg" class="list-link" target="_blank">
+                        <svg class="social-nav__icon">
+                            <use xlink:href="images/sprite.svg#icon-twitter"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <main class="main">
+            <section class="hero" id="hero">
+                <h1 class="hero__hi">Hi, my name is</h1>
+                <h2 class="hero__name">
+                    Marko Luković
+                </h2>
+                <h3 class="hero__subtitle">I build things for the web.</h3>
+                <div class="hero__blurb">
+                    <p>
+                        I'm a
+                        <span class="txt-type" data-wait="1500" data-words='["commited","passionate","self-taught"]'>
+                        </span>
+                        front-end developer
+                    </p>
+                </div>
+                <div class="hero__wrapper">
+                    <a href="cv.pdf" class="hero__email">Resume</a>
+                </div>
+            </section>
+            <section class="about js--wp-1" id="about">
+                <h3 class="heading">About Me</h3>
+                <div class="about__container">
+                    <div class="about__container-content">
+                        <div>
+                            <p>
+                                I’m Marko, a 33 years old self-taught Front-end developer , from Kragujevac.
+                                I've always found coding intuitive and have pushed myself to learn the most
+                                effective ways to achieve a result.<br />
+                                I'm fast learner and can quickly integrate into a team so i can provide value to
+                                the company and the customers.
+                            </p>
+
+                            <p>Here are a few technologies I've been working with recently:</p>
+                        </div>
+                        <ul class="about__container-skills">
+                            <li class="about__skill">JavaScript (ES6+)</li>
+                            <li class="about__skill">HTML &amp; (S)CSS</li>
+                            <li class="about__skill">React</li>
+                            <li class="about__skill">CSS Grid</li>
+                            <li class="about__skill">Redux</li>
+                            <li class="about__skill">Flexbox</li>
+                            <li class="about__skill">REST API</li>
+                            <li class="about__skill">Bootstrap</li>
+                        </ul>
+                    </div>
+                    <div class="about__container-picture">
+                        <img src="/images/profile.jpg" alt="Profile.jpg">
+                    </div>
+                </div>
+            </section>
+            <section class="portfolio" id="portfolio">
+                <h3 class="heading js--wp-2">Some Things I've Built</h3>
+                <div class="portfolio__content">
+                    <div class="content-right js--wp-2">
+                        <div class="content-right__picture">
+                            <a href="https://lukovicmarko-weather.netlify.com/" target="_blank">
+                                <img src="/images/weather.jpg" class="picture" alt="herosearch.jpg">
+                            </a>
+                        </div>
+                        <div class="content-right__text">
+                            <h4 class="featured-title">Featured Project</h4>
+                            <h2 class="featured-subtitle">Weather App</h2>
+                            <div class="project-description">
+                                <p>
+                                    A weather app made from scratch, using vanila JS. A simple app that fetches data
+                                    from an DarkSky API based on user's geolocation. After he accepts geolocation,
+                                    he should see timezone,
+                                    the current temp with cool animation icons, various information(wind speed,
+                                    humidity, presure),
+                                    and chart that shows temperature hourly. This project uses the Module pattern.
+                                </p>
+                            </div>
+                            <ul class="featured-teechList">
+                                <li>ES6</li>
+                                <li>JS modules</li>
+                            </ul>
+                            <div class="featured-links">
+                                <a href="https://github.com/lukovicmarko/weather" class="link-github project-links"
+                                    target="_blank">
+                                    <svg class="link-github__icon">
+                                        <use xlink:href="images/sprite.svg#icon-github"></use>
+                                    </svg>
+                                </a>
+                                <a href="https://lukovicmarko-weather.netlify.com/" target="_blank"
+                                    class="link-github project-links">
+                                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 194.818 194.818"
+                                        class="link-github__icon">
+                                        <g>
+                                            <path
+                                                d="M185.818,2.161h-57.04c-4.971,0-9,4.029-9,9s4.029,9,9,9h35.312l-86.3,86.3c-3.515,3.515-3.515,9.213,0,12.728 c1.758,1.757,4.061,2.636,6.364,2.636s4.606-0.879,6.364-2.636l86.3-86.3v35.313c0,4.971,4.029,9,9,9s9-4.029,9-9v-57.04 C194.818,6.19,190.789,2.161,185.818,2.161z">
+                                            </path>
+                                            <path
+                                                d="M149,77.201c-4.971,0-9,4.029-9,9v88.456H18v-122h93.778c4.971,0,9-4.029,9-9s-4.029-9-9-9H9c-4.971,0-9,4.029-9,9v140 c0,4.971,4.029,9,9,9h140c4.971,0,9-4.029,9-9V86.201C158,81.23,153.971,77.201,149,77.201z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-left js--wp-3">
+                        <div class="content-left__text">
+                            <h4 class="featured-title">Featured Project</h4>
+                            <h2 class="featured-subtitle">Fitness Tracker</h2>
+                            <div class="project-description">
+                                <p>
+                                    The application keeps
+                                    track of the number of steps the user has walked during the day. Based on the
+                                    number of steps walked, information about calories burnt, distance walked and
+                                    duration of the physical activity is calculated.
+                                </p>
+                            </div>
+                            <ul class="featured-teechList">
+                                <li>React</li>
+                                <li>Css Grid</li>
+                                <li>Sass</li>
+                            </ul>
+                            <div class="featured-links">
+                                <a href="https://github.com/lukovicmarko/fitness-tracker-react"
+                                    class="link-github project-links" target="_blank">
+                                    <svg class="link-github__icon">
+                                        <use xlink:href="images/sprite.svg#icon-github"></use>
+                                    </svg>
+                                </a>
+                                <a href="https://5db8aefd2fc603084a70b8bc--distracted-poitras-5224ec.netlify.com/"
+                                    target="_blank" class="link-github project-links">
+                                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 194.818 194.818"
+                                        class="link-github__icon">
+                                        <g>
+                                            <path
+                                                d="M185.818,2.161h-57.04c-4.971,0-9,4.029-9,9s4.029,9,9,9h35.312l-86.3,86.3c-3.515,3.515-3.515,9.213,0,12.728 c1.758,1.757,4.061,2.636,6.364,2.636s4.606-0.879,6.364-2.636l86.3-86.3v35.313c0,4.971,4.029,9,9,9s9-4.029,9-9v-57.04 C194.818,6.19,190.789,2.161,185.818,2.161z">
+                                            </path>
+                                            <path
+                                                d="M149,77.201c-4.971,0-9,4.029-9,9v88.456H18v-122h93.778c4.971,0,9-4.029,9-9s-4.029-9-9-9H9c-4.971,0-9,4.029-9,9v140 c0,4.971,4.029,9,9,9h140c4.971,0,9-4.029,9-9V86.201C158,81.23,153.971,77.201,149,77.201z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="content-left__picture">
+                            <a href="https://5db8aefd2fc603084a70b8bc--distracted-poitras-5224ec.netlify.com/"
+                                target="_blank">
+                                <img src="/images/fitness.jpg" class="picture" alt="fitness.jpg">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-right js--wp-4">
+                    <div class="content-right__picture">
+                        <a href="https://lukovicmarko-cryptotrack.netlify.com/" target="_blank">
+                            <img src="/images/cryptotrack.jpg" class="picture" alt="cryptotrack.jpg">
+                        </a>
+                    </div>
+                    <div class="content-right__text">
+                        <h4 class="featured-title">Featured Project</h4>
+                        <h2 class="featured-subtitle">CryptoTrack App</h2>
+                        <div class="project-description">
+                            <p>
+                                SPA that allows the user to track the values of cryptocurrencies and the value of the
+                                cryptocurrencies the user has. The data is shown in the table, one table for each
+                                currency.
+                                Every table contains the name of the cryptocurrency, short name, value,% of the change
+                                in the last 24%, a
+                                form that when the user submits calculates and saves in localStorage.Data is refreshed
+                                every 60 seconds. Application has implemented pagination.
+                            </p>
+                        </div>
+                        <ul class="featured-teechList">
+                            <li>React</li>
+                            <li>Sass</li>
+                            <li>Bootstrap</li>
+                        </ul>
+                        <div class="featured-links">
+                            <a href="https://github.com/lukovicmarko/cryptotracker-app"
+                                class="link-github project-links" target="_blank">
+                                <svg class="link-github__icon">
+                                    <use xlink:href="images/sprite.svg#icon-github"></use>
+                                </svg>
+                            </a>
+                            <a href="https://lukovicmarko-cryptotrack.netlify.com/" target="_blank"
+                                class="link-github project-links">
+                                <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 194.818 194.818"
+                                    class="link-github__icon">
+                                    <g>
+                                        <path
+                                            d="M185.818,2.161h-57.04c-4.971,0-9,4.029-9,9s4.029,9,9,9h35.312l-86.3,86.3c-3.515,3.515-3.515,9.213,0,12.728 c1.758,1.757,4.061,2.636,6.364,2.636s4.606-0.879,6.364-2.636l86.3-86.3v35.313c0,4.971,4.029,9,9,9s9-4.029,9-9v-57.04 C194.818,6.19,190.789,2.161,185.818,2.161z">
+                                        </path>
+                                        <path
+                                            d="M149,77.201c-4.971,0-9,4.029-9,9v88.456H18v-122h93.778c4.971,0,9-4.029,9-9s-4.029-9-9-9H9c-4.971,0-9,4.029-9,9v140 c0,4.971,4.029,9,9,9h140c4.971,0,9-4.029,9-9V86.201C158,81.23,153.971,77.201,149,77.201z">
+                                        </path>
+                                    </g>
+
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-left js--wp-5">
+                    <div class="content-left__text">
+                        <h4 class="featured-title">Featured Project</h4>
+                        <h2 class="featured-subtitle">Shoping Cart</h2>
+                        <div class="project-description">
+                            <p>
+                                Shopping cart where the user can login and get list of products with categories and
+                                price. The application have
+                                admins (Nortwind API) and client/user ( Me ). Admin can create and delete products and
+                                the user can add products
+                                to cart, increace and decreace quantity, remove from cart, search product and sort.
+                            </p>
+                        </div>
+                        <ul class="featured-teechList">
+                            <li>React</li>
+                            <li>Redux</li>
+                            <li>Bootstrap</li>
+                        </ul>
+                        <div class="featured-links">
+                            <a href="https://github.com/lukovicmarko/shop" class="link-github project-links"
+                                target="_blank">
+                                <svg class="link-github__icon">
+                                    <use xlink:href="images/sprite.svg#icon-github"></use>
+                                </svg>
+                            </a>
+                            <a href="https://lukovicmarko.github.io/shop/" target="_blank"
+                                class="link-github project-links">
+                                <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 194.818 194.818"
+                                    class="link-github__icon">
+                                    <g>
+                                        <path
+                                            d="M185.818,2.161h-57.04c-4.971,0-9,4.029-9,9s4.029,9,9,9h35.312l-86.3,86.3c-3.515,3.515-3.515,9.213,0,12.728 c1.758,1.757,4.061,2.636,6.364,2.636s4.606-0.879,6.364-2.636l86.3-86.3v35.313c0,4.971,4.029,9,9,9s9-4.029,9-9v-57.04 C194.818,6.19,190.789,2.161,185.818,2.161z">
+                                        </path>
+                                        <path
+                                            d="M149,77.201c-4.971,0-9,4.029-9,9v88.456H18v-122h93.778c4.971,0,9-4.029,9-9s-4.029-9-9-9H9c-4.971,0-9,4.029-9,9v140 c0,4.971,4.029,9,9,9h140c4.971,0,9-4.029,9-9V86.201C158,81.23,153.971,77.201,149,77.201z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="content-left__picture">
+                        <a href="https://lukovicmarko.github.io/shop/" target="_blank">
+                            <img src="/images/shop.jpg" class="picture" alt="shop.jpg">
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="contact" id="contact">
+                <h3 class="heading">What's Next?</h3>
+                <h4 class="contact__title">Get In Touch</h4>
+                <div class="hero__wrapper">
+                    <a href="mailto:lukovicmarko86@gmail.com" class="hero__email">Say Hello</a>
+                </div>
+            </section>
+        </main>
+        <div class="email">
+            <div class="email-item">
+                <a href="mailto:lukovicmarko86@gmail.com" class="email-item__link">lukovicmarko86@gmail.com</a>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer__social">
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a href="https://github.com/lukovicmarko" target="_blank">
+                        <svg class="footer__item-icon">
+                            <use xlink:href="images/sprite.svg#icon-github"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="https://www.linkedin.com/in/marko-lukovic-432ab7122/" target="_blank">
+                        <svg class="footer__item-icon">
+                            <use xlink:href="images/sprite.svg#icon-linkedin2"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="https://twitter.com/Mrvicakg" target="_blank">
+                        <svg class="footer__item-icon">
+                            <use xlink:href="images/sprite.svg#icon-twitter"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div>Designed &amp; Built by Marko Lukovic</div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+
+</html>
