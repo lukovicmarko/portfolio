@@ -88,13 +88,13 @@
                 <div class="hero__blurb">
                     <p>
                         I'm a
-                        <span class="txt-type" data-wait="1500" data-words='["commited","passionate","self-taught"]'>
+                        <span class="txt-type" data-wait="1500" data-words='["committed","passionate","self-taught"]'>
                         </span>
                         front-end developer
                     </p>
                 </div>
                 <div class="hero__wrapper">
-                    <a href="cv.pdf" class="hero__email">Resume</a>
+                    <a href="cv.pdf" class="hero__email" target="_blank">Resume</a>
                 </div>
             </section>
             <section class="about js--wp-1" id="about">
@@ -119,8 +119,10 @@
                             <li class="about__skill">CSS Grid</li>
                             <li class="about__skill">Redux</li>
                             <li class="about__skill">Flexbox</li>
-                            <li class="about__skill">REST API</li>
+                            <li class="about__skill">Dart</li>
                             <li class="about__skill">Bootstrap</li>
+                            <li class="about__skill">Flutter</li>
+                            <li class="about__skill">REST API</li>
                         </ul>
                     </div>
                     <div class="about__container-picture">
@@ -143,7 +145,7 @@
                             <div class="project-description">
                                 <p>
                                     A weather app made from scratch, using vanila JS. A simple app that fetches data
-                                    from an DarkSky API based on user's geolocation. After he accepts geolocation,
+                                    from an DarkSky API based on user's geolocation. After the user accepts geolocation,
                                     he should see timezone,
                                     the current temp with cool animation icons, various information(wind speed,
                                     humidity, presure),
@@ -187,22 +189,27 @@
                                     The application keeps
                                     track of the number of steps the user has walked during the day. Based on the
                                     number of steps walked, information about calories burnt, distance walked and
-                                    duration of the physical activity is calculated.
+                                    duration of the physical activity is calculated. Design taken from
+                                    <a href="https://xd.adobe.com/spec/3180ad23-862a-4d66-7832-0f082acd5f4a-47b1/grid"
+                                        target="_blank">
+                                        https://xd.adobe.com/spec/3180ad23-862a-4d66-7832-0f082acd5f4a-47b1/grid
+                                    </a>
                                 </p>
                             </div>
                             <ul class="featured-teechList">
                                 <li>React</li>
                                 <li>Css Grid</li>
+                                <li>Flexbox</li>
                                 <li>Sass</li>
                             </ul>
                             <div class="featured-links">
-                                <a href="https://github.com/lukovicmarko/fitness-tracker-react"
+                                <a href="https://github.com/lukovicmarko/fitness-tracker"
                                     class="link-github project-links" target="_blank">
                                     <svg class="link-github__icon">
                                         <use xlink:href="images/sprite.svg#icon-github"></use>
                                     </svg>
                                 </a>
-                                <a href="https://lukovicmarko-fitness.netlify.com/" target="_blank"
+                                <a href="https://lukovicmarko-react-fitness-tracker.netlify.app/" target="_blank"
                                     class="link-github project-links">
                                     <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 194.818 194.818"
                                         class="link-github__icon">
@@ -219,7 +226,7 @@
                             </div>
                         </div>
                         <div class="content-left__picture">
-                            <a href="https://lukovicmarko-fitness.netlify.com/" target="_blank">
+                            <a href="https://lukovicmarko-react-fitness-tracker.netlify.app/" target="_blank">
                                 <img src="/images/fitness.jpg" class="picture" alt="fitness.jpg">
                             </a>
                         </div>
@@ -227,7 +234,7 @@
                 </div>
                 <div class="content-right js--wp-4">
                     <div class="content-right__picture">
-                        <a href="https://lukovicmarko-cryptotrack.netlify.com/" target="_blank">
+                        <a href="https://lukovicmarko-cryptotracker.netlify.com/" target="_blank">
                             <img src="/images/cryptotrack.jpg" class="picture" alt="cryptotrack.jpg">
                         </a>
                     </div>
@@ -240,8 +247,8 @@
                                 cryptocurrencies the user has. The data is shown in the table, one table for each
                                 currency.
                                 Every table contains the name of the cryptocurrency, short name, value,% of the change
-                                in the last 24%, a
-                                form that when the user submits calculates and saves in localStorage.Data is refreshed
+                                in the last 24h, a
+                                form that when the user submits calculates and saves in localStorage. Data is refreshed
                                 every 60 seconds. Application has implemented pagination.
                             </p>
                         </div>
@@ -251,8 +258,8 @@
                             <li>Bootstrap</li>
                         </ul>
                         <div class="featured-links">
-                            <a href="https://github.com/lukovicmarko/cryptotracker-app"
-                                class="link-github project-links" target="_blank">
+                            <a href="https://lukovicmarko-cryptotracker.netlify.com/" class="link-github project-links"
+                                target="_blank">
                                 <svg class="link-github__icon">
                                     <use xlink:href="images/sprite.svg#icon-github"></use>
                                 </svg>
@@ -278,28 +285,31 @@
                 <div class="content-left js--wp-5">
                     <div class="content-left__text">
                         <h4 class="featured-title">Featured Project</h4>
-                        <h2 class="featured-subtitle">Contact Manager</h2>
+                        <h2 class="featured-subtitle">Proshop</h2>
                         <div class="project-description">
                             <p>
-                                Full-stack MERN CRUD app, where user can register and login and manage contacts.
-                                Each contact is associated with the user. The application has implemented JSON web
-                                token and protected routes.
+                                Full-stack MERN CRUD e-commerce app, where user can register, login, search, filter,
+                                sort, buy and order products. Application has admin functionality and also has JSON web
+                                token and protected routes implementation.
+
+
                             </p>
                         </div>
                         <ul class="featured-teechList">
                             <li>React</li>
+                            <li>Hooks</li>
                             <li>Redux</li>
                             <li>Node.js</li>
                             <li>MongoDB</li>
                         </ul>
                         <div class="featured-links">
-                            <a href="https://github.com/lukovicmarko/mern-contact-manager"
-                                class="link-github project-links" target="_blank">
+                            <a href="https://github.com/lukovicmarko/proshop-mern" class="link-github project-links"
+                                target="_blank">
                                 <svg class="link-github__icon">
                                     <use xlink:href="images/sprite.svg#icon-github"></use>
                                 </svg>
                             </a>
-                            <a href="https://lukovicmarko-contact-manager.herokuapp.com/login" target="_blank"
+                            <a href="https://lukovicmarko-proshop.herokuapp.com/" target="_blank"
                                 class="link-github project-links">
                                 <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 194.818 194.818"
                                     class="link-github__icon">
@@ -316,8 +326,8 @@
                         </div>
                     </div>
                     <div class="content-left__picture">
-                        <a href="https://lukovicmarko-contact-manager.herokuapp.com/login" target="_blank">
-                            <img src="/images/Contact-manager.jpg" class="picture" alt="Contact-manager.jpg">
+                        <a href="https://lukovicmarko-proshop.herokuapp.com/" target="_blank">
+                            <img src="/images/proshop.png" class="picture" alt="proshop.png">
                         </a>
                     </div>
                 </div>
